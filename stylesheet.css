@@ -1,0 +1,10 @@
+.content {
+  background-color: rgba(209, 173, 42, 50%);
+  margin: auto 20px;
+  padding: 0 10px;
+  height: 100vh;
+}
+
+a:link, a:visited {
+  color: black;
+}
