@@ -10,6 +10,22 @@
   <div class="content">
     <h1>Enter The Mattrix</h1>
     <h2>Here you'll find the updates and the backstories</h2>
+    <p>Tuesday, Feb 7. 2023: A stab at destructive changes</p>
+    <p>A sub premise to this thread is the value of learning the long way of doing something, because someone else's shortcut might be infested with crocodiles (including my shortcuts–so beware!).</p>
+    <p>Last night I was tooling around with destructive changes via the command line.</p>
+    <p>Turns out that the Copado tool generates a package.xml file in its deployments.</p>
+    <p>With that package.xml file, you might be moments away from turning the package.xml file into a destructive change.</p>
+    <ol>
+      <li>Connect your devhub org to your machine. ex., sfdx auth:web:login -d -a {hubalias}</li>
+      <li>Connect an org you deployed to to your machine. ex., sfdx auth:web:login -a {sandboxalias} -r {https://test.salesforce.com}</li>
+      <li>cd into a folder where you want to create the sfdx project</li>
+      <li>Run sfdx force:project:create -n {foldernameforproject}</li>
+      <li>Within the new folder you just created, create a new folder called, for example, destructiveFiles</li>
+      <li>Paste the package.xml file into destructiveFiles</li>
+      <li>Take the contents in the package.xml, copy them, and paste them into a new file called destructiveChanges.xml</li>
+      <li>Leave only the xml, package, and version tags in the package.xml file. (Delete everything else)</li>
+      <li>Run sfdx force:mdapi:deploy -d ./destructiveFiles -u {usernamefortargetorg}</li>
+    </ol>
     <p>Monday, Feb 6. 2023: Initializing the Mattrix</p>
     <p>A Salesforce Development Operations Consultant by trade and by journey, I set out to detail the progressions thus far that have landed me where I am currently.</p>
     <p>I'd like to thank educational resources that have made this telling feasible:</p>
