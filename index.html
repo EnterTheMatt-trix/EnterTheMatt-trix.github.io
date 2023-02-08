@@ -10,10 +10,17 @@
   <div class="content">
     <h1>Enter The Mattrix</h1>
     <h2>Here you'll find the updates and the backstories</h2>
+    <p>Wednesday, Feb 8. 2023: Not my day today</p>
+    <div class="removeparagraphspace">
+      <p>Snapshot differences are a finicky feature in the <a href="https://copado.com/platform">Copado</a> tool.</p>
+      <p>So what to do?</p>
+      <p>The idea is to make a comparison between source files of a Salesforce org, git commits, or a combination of those two.</p>
+      <p>Can this be done with git tooling or sfdx tools? I'll find out.</p>
+    </div>
     <p>Tuesday, Feb 7. 2023: A stab at destructive changes</p>
     <p>A sub premise to this thread is the value of learning the long way of doing something, because someone else's shortcut might be infested with crocodiles (including my shortcuts–so beware!).</p>
     <p>Last night I was tooling around with destructive changes via the command line.</p>
-    <p>Turns out that the Copado tool generates a package.xml file in its deployments.</p>
+    <p>Turns out that the <a href="https://copado.com/platform">Copado</a> tool generates a package.xml file in its deployments.</p>
     <p>With that package.xml file, you might be moments away from turning the package.xml file into a destructive change.</p>
     <ol>
       <li>Connect your devhub org to your machine. ex., sfdx auth:web:login -d -a {hubalias}</li>

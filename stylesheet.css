@@ -8,3 +8,8 @@
 a:link, a:visited {
   color: black;
 }
+
+.removeparagraphspace p {
+  margin: 0;
+  padding: 0;
+}
