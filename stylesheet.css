@@ -1,8 +1,13 @@
-.content {
-  background-color: rgba(209, 173, 42, 50%);
-  margin: auto 20px;
-  padding: 0 10px;
+html, body {
   height: 100vh;
+  margin: 0;
+}
+
+.content {
+  background: rgba(209, 173, 42, 50%);
+  margin: auto 20px;
+  padding: 0 10px 5px;
+  min-height: 100%;
 }
 
 a:link, a:visited {
@@ -12,4 +17,15 @@ a:link, a:visited {
 .removeparagraphspace p {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  margin-top: 16px;
+  width: 50%;
+}
+
+.footer {
+  background: white;
+  height: 20px;
 }
