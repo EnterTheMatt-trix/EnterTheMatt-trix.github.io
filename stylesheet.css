@@ -14,6 +14,10 @@ a:link, a:visited {
   color: black;
 }
 
+p {
+  max-width: 90%;
+}
+
 .removeparagraphspace p {
   margin: 0;
   padding: 0;
