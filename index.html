@@ -10,6 +10,28 @@
   <div class="content">
     <h1>Enter The Mattrix</h1>
     <h2>Here you'll find the updates and the backstories</h2>
+    <p>Monday, June 5. 2023</p>
+    <div class="removeparagraphspace">
+      <p>Friday ended poorly.</p>
+      <p>Let's try this again. It turns out sfdx is being replaced by sf</p>
+      <p>The first step will most likely be running `sf project generate` in a directory where you want to work with the metadata that you will be deploying across orgs.
+        Once Salesforce has generated its necessary files for running projects, you'll need to create a package.xml file. The package.xml file needs to be located in the directory where you
+        generated the project.
+      </p>
+      <p>The `sf project generate` command enables you to create scratch orgs. I'm not sure at this time if the scratch orgs it creates are based on a default org or something generic.
+        Regardless, the package.xml file is a way to indicate which components you want to either pull from an org or deploy to an org.
+      </p>
+      <p>
+        So, for instance, if I want to pull a custom field from an org and push it to another org, I can call out the custom field in the package.xml and then use `sf project retrieve start --manifest package.xml -o originorg`
+        to pull that custom field into my project. Then, I push that field to an org using `sf project deploy start --manifest package.xml --target-org targetorg`
+      </p>
+    </div>
+    <p>Friday, June 2. 2023</p>
+    <div class="removeparagraphspace">
+      <p>Back online with a few ideas.</p>
+      <p>This first one is all about SFDX release management.</p>
+      <p>This first step is, well, getting back up to speed. So, run sfdx force:org:list to see your list of dev hub orgs and connected orgs, both sandboxes and scratch orgs.</p>
+    </div>
     <p>Sunday, Feb 26. 2023</p>
     <div class="removeparagraphspace">
       <p>I needed a week to focus on Product developments.</p>
@@ -36,14 +58,14 @@
     <p>Web Dev Web Dev Web Dev, SAY IT WITH ME!!</p>
     <p>The more things change...</p>
     <div class="removeparagraphspace">
-      <p>So, python and Django. Very interesting to consider the parallel between Django projects and apps and Salesforce sfdx projects and scratch orgs.</p>
-      <p>Django is a web framework written with python. Django soups up web development providing pre configured files that become the basis of your web app.</p>
+      <p>So, Python and Django. Very interesting to consider the parallel between Django projects and apps and Salesforce sfdx projects and scratch orgs.</p>
+      <p>Django is a web framework written with Python. Django soups up web development providing pre configured files that become the basis of your web app.</p>
       <p>Salesforce sfdx projects create a file structure that mimics a Dev Hub Salesforce org so that new Salesforce scratch orgs can be created that mimic the structure of your Dev Hub org.</p>
     </div>
     <p>Thursday, Feb 16. 2023</p>
     <div class="removeparagraphspace">
       <p>Currently under maintenance</p>
-      <p>Taking a deviation from Salesforce CLI exploration to up my skills on python</p>
+      <p>Taking a deviation from Salesforce CLI exploration to up my skills on Python</p>
       <p>...more to come</p>
     </div>
     <p>Wednesday, Feb 8. 2023: Not my day today</p>
