@@ -10,10 +10,11 @@
   <div class="content">
     <h1>Enter The Mattrix</h1>
     <h2>Here you'll find the updates and the backstories</h2>
-    <p>Monday, June 5. 2023</p>
+    <h4>Monday, June 5. 2023</h4>
     <div class="removeparagraphspace">
       <p>Friday ended poorly.</p>
       <p>Let's try this again. It turns out sfdx is being replaced by sf</p>
+    </div>
       <p>The first step will most likely be running `sf project generate` in a directory where you want to work with the metadata that you will be deploying across orgs.
         Once Salesforce has generated its necessary files for running projects, you'll need to create a package.xml file. The package.xml file needs to be located in the directory where you
         generated the project.
@@ -25,14 +26,13 @@
         So, for instance, if I want to pull a custom field from an org and push it to another org, I can call out the custom field in the package.xml and then use `sf project retrieve start --manifest package.xml -o originorg`
         to pull that custom field into my project. Then, I push that field to an org using `sf project deploy start --manifest package.xml --target-org targetorg`
       </p>
-    </div>
-    <p>Friday, June 2. 2023</p>
+    <h4>Friday, June 2. 2023</h4>
     <div class="removeparagraphspace">
       <p>Back online with a few ideas.</p>
       <p>This first one is all about SFDX release management.</p>
       <p>This first step is, well, getting back up to speed. So, run sfdx force:org:list to see your list of dev hub orgs and connected orgs, both sandboxes and scratch orgs.</p>
     </div>
-    <p>Sunday, Feb 26. 2023</p>
+    <h4>Sunday, Feb 26. 2023</h4>
     <div class="removeparagraphspace">
       <p>I needed a week to focus on Product developments.</p>
       <p>I've come up with a framework for managing product growth when the product in question is a platform.</p>
@@ -54,7 +54,7 @@
     </div>
     <p>Take a look:</p>
     <img src="Checkerboard.png" alt="checkerboard">
-    <p>Friday, Feb 17. 2023</p>
+    <h4>Friday, Feb 17. 2023</h4>
     <p>Web Dev Web Dev Web Dev, SAY IT WITH ME!!</p>
     <p>The more things change...</p>
     <div class="removeparagraphspace">
@@ -62,13 +62,13 @@
       <p>Django is a web framework written with Python. Django soups up web development providing pre configured files that become the basis of your web app.</p>
       <p>Salesforce sfdx projects create a file structure that mimics a Dev Hub Salesforce org so that new Salesforce scratch orgs can be created that mimic the structure of your Dev Hub org.</p>
     </div>
-    <p>Thursday, Feb 16. 2023</p>
+    <h4>Thursday, Feb 16. 2023</h4>
     <div class="removeparagraphspace">
       <p>Currently under maintenance</p>
       <p>Taking a deviation from Salesforce CLI exploration to up my skills on Python</p>
       <p>...more to come</p>
     </div>
-    <p>Wednesday, Feb 8. 2023: Not my day today</p>
+    <h4>Wednesday, Feb 8. 2023: Not my day today</h4>
     <div class="removeparagraphspace">
       <p>Snapshot differences are a finicky feature in the <a href="https://copado.com/platform">Copado</a> tool.</p>
       <p>So what to do?</p>
@@ -82,7 +82,7 @@
       <li>nightly deploys</li>
       <li>right hand vertical nav bar <em>(Added Feb 26. 2023)</em></li>
     </ul>
-    <p>Tuesday, Feb 7. 2023: A stab at destructive changes</p>
+    <h4>Tuesday, Feb 7. 2023: A stab at destructive changes</h4>
     <p>A sub premise to this thread is the value of learning the long way of doing something, because someone else's shortcut might be infested with crocodiles (including my shortcuts–so beware!).</p>
     <p>Last night I was tooling around with destructive changes via the command line.</p>
     <p>Turns out that the <a href="https://copado.com/platform">Copado</a> tool generates a package.xml file in its deployments.</p>
@@ -98,7 +98,7 @@
       <li>Leave only the xml, package, and version tags in the package.xml file. (Delete everything else)</li>
       <li>Run sfdx force:mdapi:deploy -d ./destructiveFiles -u {usernamefortargetorg}</li>
     </ol>
-    <p>Monday, Feb 6. 2023: Initializing the Mattrix</p>
+    <h4>Monday, Feb 6. 2023: Initializing the Mattrix</h4>
     <p>A Salesforce Development Operations Consultant by trade and by journey, I set out to detail the progressions thus far that have landed me where I am currently.</p>
     <p>I'd like to thank educational resources that have made this telling feasible:</p>
     <ul>
